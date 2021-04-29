@@ -8,7 +8,8 @@ const main = readline.createInterface({
 });
 
 main.question("Enter what number you want of fibonacci: \n",(nu) =>{
-    console.log("F(",nu,") =",Math(nu-1));
+    if (nu==0) console.log("F(0) = 1"); //for some reason if I used zero the function falls
+    else console.log("F(",nu,") =",Math(nu-1));
     main.close();
 
 });
